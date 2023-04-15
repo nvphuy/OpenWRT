@@ -1,9 +1,9 @@
 which curl >/dev/null 2>&1; if [ $? -eq 0 ]; then echo ''; echo "Downloading xWan..."
-	cd /tmp; curl -sLo xwan.tar.gz https://xem.li/6n81B; tar zxf xwan.tar.gz; ./setup; rm -rf cai files root
+	cd /tmp; curl -sLo xwan.tar.gz https://xem.li/6n81B; tar zxf xwan.tar.gz; ./setup; rm -rf setup files root
 	echo ''; exit 1
 fi
 
 which wget >/dev/null 2>&1; if [ $? -eq 0 ]; then echo ''; echo "Downloading xWan..."
-cd /tmp; wget -O xwan.tar.gz https://xem.li/6n81B; tar zxf xwan.tar.gz; ./setup; rm -rf cai files root
+cd /tmp; wget -O xwan.tar.gz https://xem.li/6n81B; tar zxf xwan.tar.gz; ./setup; rm -rf setup files root
 	echo '';
 fi
